@@ -1,0 +1,92 @@
+## Interface: 16001
+## Version: 1.00
+## Author: Pirson
+## Title: |cffd597ffMap Fix Forever|r
+
+# https://warcraft.wiki.gg/wiki/Addon_Categories
+## Category: Map
+## Category-deDE: Karte
+## Category-esES: Mapa
+## Category-esMX: Mapa
+## Category-frFR: Carte
+## Category-itIT: Mappa
+## Category-koKR: 지도
+## Category-ptBR: Mapa
+## Category-ruRU: Карта
+## Category-zhCN: 地图
+## Category-zhTW: 地圖
+## Category-plPL: Mapa
+## Category-svSE: Karta
+## Category-noNO: Kart
+## Category-csCZ: Mapa
+## Category-nlNL: Kaart
+## Category-roRO: Hartă
+## Category-huHU: Térkép
+## Category-elGR: Χάρτης
+## Category-ukUA: Карта
+## Category-daDK: Kort
+## Category-fiFI: Kartta
+## Category-skSK: Mapa
+## Category-bgBG: Карта
+## Category-hrHR: Karta
+## Category-srRS: Mapa
+## Category-slSI: Zemljevid
+## Category-ltLT: Žemėlapis
+## Category-lvLV: Karte
+## Category-etEE: Kaart
+## Category-idID: Peta
+## Category-msMY: Peta
+## Category-faIR: نقشه
+## Category-heIL: מפה
+## Category-bnBD: মানচিত্র
+## Category-urPK: نقشہ
+## Category-taIN: வரைபடம்
+## Category-teIN: పటం
+
+## Notes: |cFF33CCFFFixes the green world map in non-English WoW Forever clients: missing map tiles are replaced with the classic map of the zone.|r
+## Notes-deDE: |cFF33CCFFBehebt die grüne Weltkarte in nicht-englischen WoW-Forever-Clients: fehlende Kartenteile werden durch die klassische Karte der Zone ersetzt.|r
+## Notes-esES: |cFF33CCFFArregla el mapa del mundo en verde en los clientes de WoW Forever que no están en inglés: las teselas que faltan se sustituyen por el mapa clásico de la zona.|r
+## Notes-esMX: |cFF33CCFFArregla el mapa del mundo en verde en los clientes de WoW Forever que no están en inglés: las teselas que faltan se sustituyen por el mapa clásico de la zona.|r
+## Notes-frFR: |cFF33CCFFCorrige la carte du monde verte dans les clients WoW Forever non anglais : les tuiles manquantes sont remplacées par la carte classique de la zone.|r
+## Notes-itIT: |cFF33CCFFCorregge la mappa del mondo verde nei client di WoW Forever non in inglese: le parti mancanti vengono sostituite con la mappa classica della zona.|r
+## Notes-koKR: |cFF33CCFF영어가 아닌 WoW Forever 클라이언트에서 초록색으로 보이는 세계 지도를 고칩니다: 누락된 지도 조각을 해당 지역의 클래식 지도로 대체합니다.|r
+## Notes-ptBR: |cFF33CCFFCorrige o mapa-múndi verde nos clientes de WoW Forever que não estão em inglês: as partes que faltam são substituídas pelo mapa clássico da zona.|r
+## Notes-ruRU: |cFF33CCFFИсправляет зелёную карту мира в неанглийских клиентах WoW Forever: недостающие фрагменты заменяются классической картой зоны.|r
+## Notes-zhCN: |cFF33CCFF修复非英文 WoW Forever 客户端中显示为绿色的世界地图：缺失的地图贴图会替换为该区域的经典地图。|r
+## Notes-zhTW: |cFF33CCFF修復非英文 WoW Forever 用戶端中顯示為綠色的世界地圖：缺少的地圖圖塊會替換為該區域的經典地圖。|r
+## Notes-plPL: |cFF33CCFFNaprawia zieloną mapę świata w nieangielskich klientach WoW Forever: brakujące fragmenty mapy zastępuje klasyczną mapą strefy.|r
+## Notes-svSE: |cFF33CCFFFixar den gröna världskartan i icke-engelska WoW Forever-klienter: saknade kartdelar ersätts med zonens klassiska karta.|r
+## Notes-noNO: |cFF33CCFFFikser det grønne verdenskartet i ikke-engelske WoW Forever-klienter: manglende kartdeler erstattes med sonens klassiske kart.|r
+## Notes-csCZ: |cFF33CCFFOpravuje zelenou mapu světa v neanglických klientech WoW Forever: chybějící části mapy nahradí klasickou mapou zóny.|r
+## Notes-nlNL: |cFF33CCFFHerstelt de groene wereldkaart in niet-Engelse WoW Forever-clients: ontbrekende kaartdelen worden vervangen door de klassieke kaart van de zone.|r
+## Notes-roRO: |cFF33CCFFRepară harta lumii verde în clienții WoW Forever care nu sunt în engleză: bucățile lipsă sunt înlocuite cu harta clasică a zonei.|r
+## Notes-huHU: |cFF33CCFFKijavítja a zöld világtérképet a nem angol WoW Forever kliensekben: a hiányzó térképrészeket a zóna klasszikus térképével pótolja.|r
+## Notes-elGR: |cFF33CCFFΔιορθώνει τον πράσινο παγκόσμιο χάρτη στα μη αγγλικά προγράμματα WoW Forever: τα κομμάτια που λείπουν αντικαθίστανται από τον κλασικό χάρτη της ζώνης.|r
+## Notes-ukUA: |cFF33CCFFВиправляє зелену карту світу в неанглійських клієнтах WoW Forever: відсутні фрагменти замінюються класичною картою зони.|r
+## Notes-daDK: |cFF33CCFFRetter det grønne verdenskort i ikke-engelske WoW Forever-klienter: manglende kortdele erstattes med zonens klassiske kort.|r
+## Notes-fiFI: |cFF33CCFFKorjaa vihreän maailmankartan muissa kuin englanninkielisissä WoW Forever -asiakkaissa: puuttuvat karttapalat korvataan alueen klassisella kartalla.|r
+## Notes-skSK: |cFF33CCFFOpravuje zelenú mapu sveta v neanglických klientoch WoW Forever: chýbajúce časti mapy nahradí klasickou mapou zóny.|r
+## Notes-bgBG: |cFF33CCFFПоправя зелената карта на света в неанглийските клиенти на WoW Forever: липсващите части се заменят с класическата карта на зоната.|r
+## Notes-hrHR: |cFF33CCFFPopravlja zelenu kartu svijeta u neengleskim WoW Forever klijentima: dijelovi koji nedostaju zamjenjuju se klasičnom kartom zone.|r
+## Notes-srRS: |cFF33CCFFPopravlja zelenu mapu sveta u neengleskim WoW Forever klijentima: delovi koji nedostaju zamenjuju se klasičnom mapom zone.|r
+## Notes-slSI: |cFF33CCFFPopravi zeleni zemljevid sveta v neangleških odjemalcih WoW Forever: manjkajoči deli se nadomestijo s klasičnim zemljevidom območja.|r
+## Notes-ltLT: |cFF33CCFFIštaiso žalią pasaulio žemėlapį ne anglų kalbos WoW Forever klientuose: trūkstamos dalys pakeičiamos klasikiniu zonos žemėlapiu.|r
+## Notes-lvLV: |cFF33CCFFIzlabo zaļo pasaules karti ne angļu valodas WoW Forever klientos: trūkstošās daļas aizstāj ar zonas klasisko karti.|r
+## Notes-etEE: |cFF33CCFFParandab rohelise maailmakaardi mitte-ingliskeelsetes WoW Foreveri klientides: puuduvad kaarditükid asendatakse tsooni klassikalise kaardiga.|r
+## Notes-idID: |cFF33CCFFMemperbaiki peta dunia berwarna hijau di klien WoW Forever non-Inggris: potongan peta yang hilang diganti dengan peta klasik zona tersebut.|r
+## Notes-msMY: |cFF33CCFFMembaiki peta dunia berwarna hijau dalam klien WoW Forever bukan bahasa Inggeris: kepingan peta yang hilang diganti dengan peta klasik zon itu.|r
+## Notes-faIR: |cFF33CCFFنقشهٔ سبز جهان را در کلاینت‌های غیرانگلیسی WoW Forever درست می‌کند: تکه‌های گم‌شدهٔ نقشه با نقشهٔ کلاسیک همان منطقه جایگزین می‌شوند.|r
+## Notes-heIL: |cFF33CCFFמתקן את מפת העולם הירוקה בלקוחות WoW Forever שאינם באנגלית: חלקי המפה החסרים מוחלפים במפה הקלאסית של האזור.|r
+## Notes-bnBD: |cFF33CCFFইংরেজি ছাড়া অন্য ভাষার WoW Forever ক্লায়েন্টে সবুজ বিশ্ব মানচিত্র ঠিক করে: হারানো অংশগুলো অঞ্চলের ক্লাসিক মানচিত্র দিয়ে বদলে দেয়।|r
+## Notes-urPK: |cFF33CCFFغیر انگریزی WoW Forever کلائنٹس میں سبز عالمی نقشہ ٹھیک کرتا ہے: نقشے کے غائب حصے علاقے کے کلاسک نقشے سے بدل دیے جاتے ہیں۔|r
+## Notes-taIN: |cFF33CCFFஆங்கிலம் அல்லாத WoW Forever கிளையண்டுகளில் பச்சையாகத் தெரியும் உலக வரைபடத்தைச் சரிசெய்கிறது: காணாமல் போன பகுதிகள் அந்த மண்டலத்தின் பழைய வரைபடத்தால் மாற்றப்படும்.|r
+## Notes-teIN: |cFF33CCFFఇంగ్లీష్ కాని WoW Forever క్లయింట్లలో ఆకుపచ్చగా కనిపించే ప్రపంచ పటాన్ని సరిచేస్తుంది: లేని భాగాలను ఆ ప్రాంతపు పాత పటంతో భర్తీ చేస్తుంది.|r
+
+## SavedVariables: MapFixForeverDB
+
+# Solo WoW Forever: el sufijo _Camelot es el game type que busca ese cliente, y
+# sin un .toc generico ningun otro cliente lista el addon.
+
+Locales.lua
+Data.lua
+MapFixForever.lua
