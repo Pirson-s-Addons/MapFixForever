@@ -2,7 +2,8 @@ local _, ns = ...
 
 -- Texturas nuevas del mapa de WoW Forever (build 1.60.1.69913) que solo se
 -- publicaron en ingles: FileDataID -> copia original en Art\ (sin .blp).
--- Generado desde el listfile de la comunidad (wowdev/wow-listfile).
+-- Generado desde el listfile de la comunidad (wowdev/wow-listfile); las que el
+-- listfile no nombra van como <carpeta>_<FileDataID>.
 
 ns.ART = {
     [7139245] = "hyjal_camelot\\hyjal_camelot1",
@@ -1546,6 +1547,10 @@ ns.ART = {
     [8124664] = "zephrasisle\\shendarvillage3",
     [8124665] = "zephrasisle\\shendarvillage4",
     [8124666] = "zephrasisle\\shrineofakir1",
+    [8124667] = "zephrasisle\\zephrasisle_8124667",
+    [8124668] = "zephrasisle\\zephrasisle_8124668",
+    [8124669] = "zephrasisle\\zephrasisle_8124669",
+    [8124670] = "zephrasisle\\zephrasisle_8124670",
     [8124671] = "zephrasisle\\valanaar1",
     [8124672] = "zephrasisle\\valanaar2",
     [8124673] = "zephrasisle\\valanaar3",
