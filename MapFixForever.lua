@@ -1,18 +1,18 @@
--- Map Fix Forever: el mapa del mundo sin teselas verdes en los clientes de WoW
--- Forever que no estan en ingles.
+-- Map Fix Forever: el mapa del mundo completo en los clientes de WoW Forever
+-- que no estan en ingles.
 --
 -- El fallo (beta 1.60.1): los mapas nuevos de Forever (interface/worldmap/
--- <zona>_c60, la Isla de Zephras...) solo se publicaron en ingles. En otro
--- idioma el cliente no los encuentra ("Can't find file in build manifest" en
--- Logs/AsyncFile.log) y pinta la textura que falta en verde.
+-- <zona>_c60, la Isla de Zephras, hyjal_camelot) solo se publicaron en ingles.
+-- En otro idioma el cliente no los encuentra ("Can't find file in build
+-- manifest" en Logs/AsyncFile.log) y los pinta en verde.
 --
--- El arreglo: despues de que Blizzard pinte las teselas del mapa y las zonas
--- exploradas, cada textura se comprueba en una textura oculta (SetTexture
--- devuelve si la pudo cargar). Si falta:
---   * tesela de un mapa _c60 -> la misma tesela del mapa antiguo de la zona
---     (Data.lua), si esa si existe;
---   * sin equivalente (zona nueva, zona explorada) -> se quita, para que no
---     salga el verde.
+-- El arreglo: el addon lleva esas texturas originales (Art/, las mismas del
+-- cliente en ingles, build 1.60.1.69913) y, fuera del ingles, pone su copia en
+-- cada textura del mapa que use una de ellas: teselas y zonas exploradas.
+-- Para no depender de un unico camino, se engancha en tres sitios:
+--   1. Los mixins (marcos del mapa que se creen despues).
+--   2. Las capas y marcadores ya creados, al abrir o cambiar el mapa.
+--   3. Un repaso cada medio segundo mientras el mapa esta abierto.
 -- Solo post-hooks (hooksecurefunc): no se toca el codigo de Blizzard.
 -- Contrastado con Gethe/wow-ui-source, rama "forever".
 
@@ -20,41 +20,33 @@ local _, ns = ...
 local L = ns.L
 
 local PREFIX = "|cffd597ffMap Fix Forever|r: "
+local ART_PATH = "Interface\\AddOns\\MapFixForever\\Art\\"
 local ENGLISH = { enUS = true, enGB = true }
 local FILTER = "TRILINEAR"
+local SCAN_INTERVAL = 0.5
+local EXPLORATION_TEMPLATE = "MapExplorationPinTemplate"
 
 local db
-local probe                 -- textura oculta para comprobar archivos
-local missing = {}          -- fileID -> true (falta) / false (existe)
-local stats = { checked = 0, missing = 0, replaced = 0, cleared = 0 }
+local stats = { replaced = 0 }
+local seen = {}             -- fileIDs de Forever vistos en el mapa
 
--- En ingles los mapas estan completos: no hay nada que arreglar.
 local function Active()
     return db.enabled and not ENGLISH[GetLocale()]
 end
 
-local function IsMissing(fileID)
-    if missing[fileID] == nil then
-        local loaded = probe:SetTexture(fileID)
-        missing[fileID] = ns.KNOWN_MISSING[fileID] or not loaded
-        stats.checked = stats.checked + 1
-        if missing[fileID] then stats.missing = stats.missing + 1 end
-    end
-    return missing[fileID]
+-- El ID que puso Blizzard. Si el archivo no llego a cargar, GetTextureFileID
+-- podria no darlo: GetTexture devuelve lo que se le paso a SetTexture.
+local function FileID(texture)
+    return texture:GetTextureFileID() or tonumber(texture:GetTexture())
 end
 
 local function Fix(texture)
-    local fileID = texture:GetTextureFileID()
-    if not fileID or not IsMissing(fileID) then return end
-    local fallback = ns.FALLBACK[fileID]
-    if fallback and not IsMissing(fallback) then
-        texture:SetTexture(fallback, nil, nil, FILTER)
-        stats.replaced = stats.replaced + 1
-    else
-        -- Sin nada que poner: vacia en vez de verde
-        texture:SetTexture(nil)
-        stats.cleared = stats.cleared + 1
-    end
+    local fileID = FileID(texture)
+    local art = fileID and ns.ART[fileID]
+    if not art then return end
+    seen[fileID] = true
+    texture:SetTexture(ART_PATH .. art, nil, nil, FILTER)
+    stats.replaced = stats.replaced + 1
 end
 
 local function FixPool(pool)
@@ -62,10 +54,39 @@ local function FixPool(pool)
     for texture in pool:EnumerateActive() do Fix(texture) end
 end
 
--- Los marcos del mapa copian los metodos del mixin al crearse, asi que el
--- enganche va en el mixin, antes de que se abra el mapa.
+-- 2. Marcos ya creados: capas de teselas y marcadores de zonas exploradas
+local hookedPins = {}
+local function Scan(map)
+    if not (map and map.detailLayerPool and Active()) then return end
+    for layer in map.detailLayerPool:EnumerateActive() do FixPool(layer.detailTilePool) end
+    for pin in map:EnumeratePinsByTemplate(EXPLORATION_TEMPLATE) do
+        if not hookedPins[pin] then
+            hookedPins[pin] = true
+            hooksecurefunc(pin, "RefreshOverlays", function(self) FixPool(self.overlayTexturePool) end)
+        end
+        FixPool(pin.overlayTexturePool)
+    end
+end
+
+local hookedMaps = {}
+local function HookMap(map)
+    if not map or hookedMaps[map] or not map.EnumeratePinsByTemplate then return end
+    hookedMaps[map] = true
+    hooksecurefunc(map, "OnMapChanged", function(self) Scan(self) end)
+    map:HookScript("OnShow", function(self) Scan(self) end)
+    -- 3. Repaso mientras esta abierto: cubre repintados por otros caminos
+    local elapsed = 0
+    map:HookScript("OnUpdate", function(self, delta)
+        elapsed = elapsed + delta
+        if elapsed < SCAN_INTERVAL then return end
+        elapsed = 0
+        Scan(self)
+    end)
+end
+
+-- 1. Mixins: los marcos del mapa copian sus metodos al crearse
 local hookedDetail, hookedExploration = false, false
-local function HookMixins()
+local function HookAll()
     if not hookedDetail and MapCanvasDetailLayerMixin then
         hookedDetail = true
         hooksecurefunc(MapCanvasDetailLayerMixin, "RefreshDetailTiles", function(self)
@@ -78,6 +99,8 @@ local function HookMixins()
             FixPool(self.overlayTexturePool)
         end)
     end
+    HookMap(WorldMapFrame)
+    HookMap(BattlefieldMapFrame)
 end
 
 local function Status()
@@ -86,7 +109,9 @@ local function Status()
         return
     end
     print(PREFIX .. (db.enabled and L.ENABLED or L.DISABLED))
-    print(PREFIX .. L.STATUS:format(stats.checked, stats.missing, stats.replaced, stats.cleared))
+    local count = 0
+    for _ in pairs(seen) do count = count + 1 end
+    print(PREFIX .. L.STATUS:format(count, stats.replaced))
 end
 
 local frame = CreateFrame("Frame")
@@ -97,9 +122,7 @@ frame:SetScript("OnEvent", function(_, event)
         MapFixForeverDB = MapFixForeverDB or {}
         db = MapFixForeverDB
         if db.enabled == nil then db.enabled = true end
-        probe = frame:CreateTexture()
-        probe:Hide()
-        HookMixins()
+        HookAll()
 
         SLASH_MAPFIXFOREVER1 = "/mapfix"
         SlashCmdList.MAPFIXFOREVER = function(msg)
@@ -109,8 +132,8 @@ frame:SetScript("OnEvent", function(_, event)
             end
             Status()
         end
-    else
-        -- Por si el mapa (y sus mixins) se cargan bajo demanda
-        HookMixins()
+    elseif db then
+        -- Mapas de carga bajo demanda (mapa de batalla...)
+        HookAll()
     end
 end)
