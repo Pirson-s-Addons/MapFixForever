@@ -1,47 +1,54 @@
 ## Interface: 16001
-## Version: 1.00
+## Version: 1.01
 ## Author: Pirson
+## IconTexture: Interface\AddOns\MapFixForever\img\logo_mff
 ## Title: |cffd597ffMap Fix Forever|r
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
-## Category: Map: shows the original Forever map, the same one as in English.
-## Category-deDE: Karte: zeigt die originale Forever-Karte, dieselbe wie auf Englisch.
-## Category-esES: Mapa: muestra el mapa original de Forever, el mismo que en inglés.
-## Category-esMX: Mapa: muestra el mapa original de Forever, el mismo que en inglés.
-## Category-frFR: Carte : affiche la carte originale de Forever, la même qu'en anglais.
-## Category-itIT: Mappa: mostra la mappa originale di Forever, la stessa che in inglese.
-## Category-koKR: 지도: 영어판과 같은 Forever 원본 지도를 보여 줍니다.
-## Category-ptBR: Mapa: mostra o mapa original de Forever, o mesmo do inglês.
-## Category-ruRU: Карта: показывает оригинальную карту Forever, такую же, как в английской версии.
-## Category-zhCN: 地图：显示与英文版相同的 Forever 原版地图。
-## Category-zhTW: 地圖：顯示與英文版相同的 Forever 原版地圖。
-## Category-plPL: Mapa: pokazuje oryginalną mapę Forever, taką samą jak po angielsku.
-## Category-svSE: Karta: visar den ursprungliga Forever-kartan, samma som på engelska.
-## Category-noNO: Kart: viser det originale Forever-kartet, det samme som på engelsk.
-## Category-csCZ: Mapa: zobrazí původní mapu Forever, stejnou jako v angličtině.
-## Category-nlNL: Kaart: toont de originele Forever-kaart, dezelfde als in het Engels.
-## Category-roRO: Hartă: afișează harta originală Forever, aceeași ca în engleză.
-## Category-huHU: Térkép: az eredeti Forever térképet mutatja, ugyanazt, mint angolul.
-## Category-elGR: Χάρτης: εμφανίζει τον αρχικό χάρτη του Forever, τον ίδιο με τα αγγλικά.
-## Category-ukUA: Карта: показує оригінальну карту Forever, таку саму, як англійською.
-## Category-daDK: Kort: viser det originale Forever-kort, det samme som på engelsk.
-## Category-fiFI: Kartta: näyttää alkuperäisen Forever-kartan, saman kuin englanniksi.
-## Category-skSK: Mapa: zobrazí pôvodnú mapu Forever, rovnakú ako v angličtine.
-## Category-bgBG: Карта: показва оригиналната карта на Forever, същата като на английски.
-## Category-hrHR: Karta: prikazuje izvornu Forever kartu, istu kao na engleskom.
-## Category-srRS: Mapa: prikazuje originalnu Forever mapu, istu kao na engleskom.
-## Category-slSI: Zemljevid: prikaže izvirni zemljevid Forever, enak kot v angleščini.
-## Category-ltLT: Žemėlapis: rodo originalų Forever žemėlapį, tokį patį kaip anglų kalba.
-## Category-lvLV: Karte: rāda oriģinālo Forever karti, tādu pašu kā angļu valodā.
-## Category-etEE: Kaart: näitab algset Foreveri kaarti, sama mis inglise keeles.
-## Category-idID: Peta: menampilkan peta asli Forever, sama seperti versi Inggris.
-## Category-msMY: Peta: memaparkan peta asal Forever, sama seperti versi bahasa Inggeris.
-## Category-faIR: نقشه: نقشهٔ اصلی Forever را نشان می‌دهد، همان نقشهٔ نسخهٔ انگلیسی.
-## Category-heIL: מפה: מציג את המפה המקורית של Forever, זהה לזו שבאנגלית.
-## Category-bnBD: মানচিত্র: ইংরেজি সংস্করণের মতো একই আসল Forever মানচিত্র দেখায়।
-## Category-urPK: نقشہ: انگریزی ورژن جیسا ہی اصل Forever نقشہ دکھاتا ہے۔
-## Category-taIN: வரைபடம்: ஆங்கிலப் பதிப்பில் உள்ள அதே அசல் Forever வரைபடத்தைக் காட்டுகிறது.
-## Category-teIN: పటం: ఇంగ్లీష్ వెర్షన్‌లో ఉన్న అదే అసలు Forever పటాన్ని చూపిస్తుంది.
+## Category: Map & Minimap
+## Category-deDE: Karte & Minikarte
+## Category-esES: Mapa y minimapa
+## Category-esMX: Mapa y minimapa
+## Category-frFR: Carte et minicarte
+## Category-itIT: Mappa e minimappa
+## Category-koKR: 지도 및 미니맵
+## Category-ptBR: Mapa e minimapa
+## Category-ruRU: Карта и миникарта
+## Category-zhCN: 地图和小地图
+## Category-zhTW: 地圖與小地圖
+## Category-plPL: Mapa i minimapa
+## Category-svSE: Karta och minikarta
+## Category-noNO: Kart og minikart
+## Category-csCZ: Mapa a minimapa
+## Category-nlNL: Kaart en minikaart
+## Category-roRO: Hartă și minihartă
+## Category-huHU: Térkép és minitérkép
+## Category-elGR: Χάρτης και μικρός χάρτης
+## Category-ukUA: Мапа й мінімапа
+## Category-daDK: Kort og minikort
+## Category-fiFI: Kartta ja minikartta
+## Category-skSK: Mapa a minimapa
+## Category-bgBG: Карта и миникарта
+## Category-hrHR: Karta i mini-karta
+## Category-srRS: Mapa i mini-mapa
+## Category-slSI: Zemljevid in mini zemljevid
+## Category-ltLT: Žemėlapis ir mini žemėlapis
+## Category-lvLV: Karte un minikarte
+## Category-etEE: Kaart ja minikaart
+## Category-idID: Peta dan minimap
+## Category-msMY: Peta dan peta mini
+## Category-faIR: نقشه و مینی‌مپ
+## Category-heIL: מפה ומפה מוקטנת
+## Category-bnBD: মানচিত্র ও মিনিম্যাপ
+## Category-urPK: نقشہ اور منی میپ
+## Category-taIN: வரைபடம் மற்றும் சிறு வரைபடம்
+## Category-teIN: పటం మరియు చిన్న పటం
+## Category-trTR: Harita ve mini harita
+## Category-jaJP: マップとミニマップ
+## Category-arSA: الخريطة والخريطة المصغرة
+## Category-hiIN: नक्शा और मिनीमैप
+## Category-thTH: แผนที่และแผนที่ย่อ
+## Category-viVN: Bản đồ và bản đồ nhỏ
 
 ## Notes: |cFF33CCFFFixes the green world map in non-English WoW Forever clients: shows the original Forever map, the same one as in English.|r
 ## Notes-deDE: |cFF33CCFFBehebt die grüne Weltkarte in nicht-englischen WoW-Forever-Clients: zeigt die originale Forever-Karte, dieselbe wie auf Englisch.|r
@@ -81,12 +88,37 @@
 ## Notes-urPK: |cFF33CCFFغیر انگریزی WoW Forever کلائنٹس میں سبز عالمی نقشہ ٹھیک کرتا ہے: انگریزی ورژن جیسا ہی اصل Forever نقشہ دکھاتا ہے۔|r
 ## Notes-taIN: |cFF33CCFFஆங்கிலம் அல்லாத WoW Forever கிளையண்டுகளில் பச்சையாகத் தெரியும் உலக வரைபடத்தைச் சரிசெய்கிறது: ஆங்கிலப் பதிப்பில் உள்ள அதே அசல் Forever வரைபடத்தைக் காட்டுகிறது.|r
 ## Notes-teIN: |cFF33CCFFఇంగ్లీష్ కాని WoW Forever క్లయింట్లలో ఆకుపచ్చగా కనిపించే ప్రపంచ పటాన్ని సరిచేస్తుంది: ఇంగ్లీష్ వెర్షన్‌లో ఉన్న అదే అసలు Forever పటాన్ని చూపిస్తుంది.|r
+## Notes-trTR: |cFF33CCFFİngilizce olmayan WoW Forever istemcilerindeki yeşil dünya haritasını düzeltir: İngilizcedeki ile aynı olan orijinal Forever haritasını gösterir.|r
+## Notes-jaJP: |cFF33CCFF英語以外の WoW Forever クライアントで緑色になるワールドマップを修正し、英語版と同じ Forever のオリジナルマップを表示します。|r
+## Notes-arSA: |cFF33CCFFيصلح خريطة العالم الخضراء في عملاء WoW Forever غير الإنجليزية: يعرض خريطة Forever الأصلية، نفسها الموجودة بالإنجليزية.|r
+## Notes-hiIN: |cFF33CCFFगैर-अंग्रेज़ी WoW Forever क्लाइंट में हरे विश्व नक्शे को ठीक करता है: मूल Forever नक्शा दिखाता है, वही जो अंग्रेज़ी में है।|r
+## Notes-thTH: |cFF33CCFFแก้แผนที่โลกสีเขียวในไคลเอนต์ WoW Forever ที่ไม่ใช่ภาษาอังกฤษ: แสดงแผนที่ต้นฉบับของ Forever แบบเดียวกับภาษาอังกฤษ|r
+## Notes-viVN: |cFF33CCFFSửa bản đồ thế giới màu xanh trên máy khách WoW Forever không phải tiếng Anh: hiện bản đồ Forever gốc, giống bản tiếng Anh.|r
 
 ## SavedVariables: MapFixForeverDB
 
 # Solo WoW Forever: el sufijo _Camelot es el game type que busca ese cliente, y
 # sin un .toc generico ningun otro cliente lista el addon.
 
-Locales.lua
-Data.lua
-MapFixForever.lua
+Locales/enUS.lua
+Locales/esES.lua
+Locales/deDE.lua
+Locales/frFR.lua
+Locales/itIT.lua
+Locales/ptBR.lua
+Locales/ruRU.lua
+Locales/koKR.lua
+Locales/zhCN.lua
+Locales/zhTW.lua
+Locales/plPL.lua
+Locales/svSE.lua
+Locales/noNO.lua
+Locales/trTR.lua
+Locales/jaJP.lua
+Locales/arSA.lua
+Locales/hiIN.lua
+Locales/thTH.lua
+Locales/viVN.lua
+Locales/csCZ.lua
+Data/Data.lua
+Core/MapFixForever.lua
