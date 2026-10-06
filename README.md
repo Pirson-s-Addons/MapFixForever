@@ -20,6 +20,17 @@
 
 ---
 
+## 📸 Screenshots · Capturas
+
+<table>
+<tr>
+<td align="center" width="50%"><img src="https://media.forgecdn.net/attachments/1957/882/mapnofixed-png.png" alt="Before: green map"><br><sub>Before: green map · Antes: mapa verde</sub></td>
+<td align="center" width="50%"><img src="https://media.forgecdn.net/attachments/1957/883/mapfixed-png.png" alt="After: original map art"><br><sub>After: original map art · Después: mapa original</sub></td>
+</tr>
+</table>
+
+---
+
 ## The problem
 
 In the WoW Forever beta (1.60.1), the new world maps (the world map, Kalimdor, Durotar, Zephras Isle, Hyjal and the other redrawn zones) only shipped for **English** clients. In any other language the client can't find them (`Logs/AsyncFile.log`: *"Can't find file in build manifest"*) and draws them **solid green**, both the zone map and the explored areas.
