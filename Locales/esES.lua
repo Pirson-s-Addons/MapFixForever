@@ -11,3 +11,5 @@ L["STATUS_ENGLISH"] = "el cliente está en inglés: los mapas están completos, 
 L["ENABLED"] = "arreglo activado (/mapfix off para desactivarlo)."
 L["DISABLED"] = "arreglo desactivado (/mapfix on para activarlo). Cambia de mapa para ver el resultado."
 L["STATUS"] = "%d texturas originales del mapa de Forever mostradas (%d sustituciones). Cambia de mapa para ver el resultado."
+L["MINIMAP_ON"] = "parche del minimapa activado: Orgrimmar y Ventormenta ya no salen grises en el minimapa (/mapfix minimap para desactivarlo)."
+L["MINIMAP_OFF"] = "parche del minimapa desactivado (/mapfix minimap para activarlo)."

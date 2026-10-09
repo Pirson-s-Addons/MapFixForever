@@ -13,3 +13,5 @@ L["STATUS_ENGLISH"] = "the client is in English: the maps are complete, there is
 L["ENABLED"] = "fix on (/mapfix off to turn it off)."
 L["DISABLED"] = "fix off (/mapfix on to turn it on). Change map to see the result."
 L["STATUS"] = "%d original Forever map textures shown (%d replacements). Change map to see the result."
+L["MINIMAP_ON"] = "minimap patch on: Orgrimmar and Stormwind no longer show a grey minimap (/mapfix minimap to turn it off)."
+L["MINIMAP_OFF"] = "minimap patch off (/mapfix minimap to turn it on)."

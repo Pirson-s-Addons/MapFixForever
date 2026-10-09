@@ -11,3 +11,5 @@ L["STATUS_ENGLISH"] = "klienten er på engelsk: kartene er komplette, det er ing
 L["ENABLED"] = "fiks på (/mapfix off for å slå av)."
 L["DISABLED"] = "fiks av (/mapfix on for å slå på). Bytt kart for å se resultatet."
 L["STATUS"] = "%d originale Forever-kartteksturer vist (%d erstatninger). Bytt kart for å se resultatet."
+L["MINIMAP_ON"] = "minikartfiks på: Orgrimmar og Stormwind er ikke lenger grå på minikartet (/mapfix minimap for å slå av)."
+L["MINIMAP_OFF"] = "minikartfiks av (/mapfix minimap for å slå på)."

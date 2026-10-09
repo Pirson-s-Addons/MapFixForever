@@ -11,3 +11,5 @@ L["STATUS_ENGLISH"] = "klient je v angličtině: mapy jsou kompletní, není co 
 L["ENABLED"] = "oprava zapnuta (/mapfix off pro vypnutí)."
 L["DISABLED"] = "oprava vypnuta (/mapfix on pro zapnutí). Změň mapu, abys viděl výsledek."
 L["STATUS"] = "Zobrazeno %d původních textur mapy Forever (%d náhrad). Změň mapu, abys viděl výsledek."
+L["MINIMAP_ON"] = "oprava minimapy zapnuta: Orgrimmar a Stormwind už nejsou na minimapě šedé (/mapfix minimap pro vypnutí)."
+L["MINIMAP_OFF"] = "oprava minimapy vypnuta (/mapfix minimap pro zapnutí)."

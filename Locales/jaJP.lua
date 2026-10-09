@@ -11,3 +11,5 @@ L["STATUS_ENGLISH"] = "クライアントは英語です：マップは完全な
 L["ENABLED"] = "修正オン（/mapfix off でオフ）。"
 L["DISABLED"] = "修正オフ（/mapfix on でオン）。マップを切り替えると結果が表示されます。"
 L["STATUS"] = "Forever のオリジナルマップテクスチャを %d 個表示（置き換え %d 回）。マップを切り替えると結果が表示されます。"
+L["MINIMAP_ON"] = "ミニマップ修正オン：Orgrimmar と Stormwind のミニマップが灰色にならなくなります（/mapfix minimap でオフ）。"
+L["MINIMAP_OFF"] = "ミニマップ修正オフ（/mapfix minimap でオン）。"

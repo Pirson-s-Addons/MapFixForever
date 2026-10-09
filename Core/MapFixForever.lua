@@ -104,6 +104,7 @@ local function HookAll()
 end
 
 local function Status()
+    print(PREFIX .. (db.minimap and L.MINIMAP_ON or L.MINIMAP_OFF))
     if ENGLISH[GetLocale()] then
         print(PREFIX .. L.STATUS_ENGLISH)
         return
@@ -122,13 +123,19 @@ frame:SetScript("OnEvent", function(_, event)
         MapFixForeverDB = MapFixForeverDB or {}
         db = MapFixForeverDB
         if db.enabled == nil then db.enabled = true end
+        if db.minimap == nil then db.minimap = true end
+        ns.db = db
         HookAll()
+        ns.StartMinimap()
 
         SLASH_MAPFIXFOREVER1 = "/mapfix"
         SlashCmdList.MAPFIXFOREVER = function(msg)
             local command = (msg or ""):lower():match("^%s*(%S*)")
             if command == "on" or command == "off" then
                 db.enabled = command == "on"
+            elseif command == "minimap" then
+                db.minimap = not db.minimap
+                ns.RefreshMinimap()
             end
             Status()
         end

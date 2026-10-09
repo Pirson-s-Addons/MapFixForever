@@ -11,3 +11,5 @@ L["STATUS_ENGLISH"] = "istemci İngilizce: haritalar eksiksiz, düzeltilecek bir
 L["ENABLED"] = "düzeltme açık (kapatmak için /mapfix off)."
 L["DISABLED"] = "düzeltme kapalı (açmak için /mapfix on). Sonucu görmek için haritayı değiştir."
 L["STATUS"] = "%d orijinal Forever harita dokusu gösteriliyor (%d değiştirme). Sonucu görmek için haritayı değiştir."
+L["MINIMAP_ON"] = "mini harita düzeltmesi açık: Orgrimmar ve Stormwind mini haritada artık gri görünmüyor (kapatmak için /mapfix minimap)."
+L["MINIMAP_OFF"] = "mini harita düzeltmesi kapalı (açmak için /mapfix minimap)."

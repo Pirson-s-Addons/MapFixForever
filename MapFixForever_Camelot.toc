@@ -122,3 +122,4 @@ Locales/viVN.lua
 Locales/csCZ.lua
 Data/Data.lua
 Core/MapFixForever.lua
+Core/Minimap.lua

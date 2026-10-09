@@ -40,8 +40,10 @@ In the WoW Forever beta (1.60.1), the new world maps (the world map, Kalimdor, D
 **Map Fix Forever** ships the **original map textures** of the English client (build 1.60.1.69913, 1554 textures in 55 map folders) and swaps them in whenever the game draws one of those maps. Your map looks exactly like it does in English, explored areas included.
 
 - Nothing to set up: install it and open the map.
-- On English clients it does nothing.
+- On English clients the world map is left alone (only the minimap fix below runs).
 - Only post-hooks: Blizzard's map code is never replaced.
+
+**Grey minimap in Orgrimmar and Stormwind** (build 1.60.1.70291, every language): inside those two cities the minimap turns light grey and black. The addon hides the broken city minimap and draws the ground minimap tiles the game already has underneath, following your position, zoom and minimap rotation. Icons stay on top. Outside those cities nothing changes.
 
 ## Installation
 
@@ -55,6 +57,7 @@ It only loads on WoW Forever: its TOCs are `MapFixForever_Camelot.toc` (`Camelot
 
 - `/mapfix` — status: how many original textures are being shown.
 - `/mapfix on` / `/mapfix off` — turn the fix on or off.
+- `/mapfix minimap` — turn the grey minimap fix on or off.
 
 ## Notes
 
