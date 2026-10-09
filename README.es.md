@@ -49,7 +49,7 @@ En la beta de WoW Forever (1.60.1), los mapas nuevos (mapa del mundo, Kalimdor, 
 2. Extrae la carpeta `MapFixForever` en `World of Warcraft/_classic_beta_/Interface/AddOns/`.
 3. Reinicia el juego y activa el addon.
 
-Solo se carga en WoW Forever: su único `.toc` es `MapFixForever_Camelot.toc` (`Camelot` es el game type de Forever).
+Solo se carga en WoW Forever: sus `.toc` son `MapFixForever_Camelot.toc` (`Camelot` es el game type de Forever) y `MapFixForever.toc`, copia idéntica que necesita la app de CurseForge para detectarlo.
 
 ## Comandos
 
