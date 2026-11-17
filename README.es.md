@@ -39,7 +39,7 @@ En WoW Forever (1.60.1), los mapas nuevos (mapa del mundo, Kalimdor, Durotar, Is
 ## Instalación
 
 1. Descarga el zip de la [última release](https://github.com/Pirson-s-Addons/MapFixForever/releases/latest).
-2. Extrae la carpeta `MapFixForever` en `World of Warcraft/_classic_beta_/Interface/AddOns/`.
+2. Extrae la carpeta `MapFixForever` en `World of Warcraft/_forever_/Interface/AddOns/`.
 3. Reinicia el juego y activa el addon.
 
 Solo se carga en WoW Forever: sus `.toc` son `MapFixForever_Camelot.toc` (`Camelot` es el game type de Forever) y `MapFixForever.toc`, copia idéntica que necesita la app de CurseForge para detectarlo.
