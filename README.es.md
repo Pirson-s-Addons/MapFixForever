@@ -18,7 +18,7 @@
 
 ## El problema
 
-En la beta de WoW Forever (1.60.1), los mapas nuevos (mapa del mundo, Kalimdor, Durotar, Isla de Zephras, Hyjal y el resto de zonas redibujadas) solo se publicaron para el cliente en **inglés**. En cualquier otro idioma el cliente no los encuentra (`Logs/AsyncFile.log`: *"Can't find file in build manifest"*) y los pinta en **verde**, tanto el mapa de la zona como las zonas exploradas.
+En WoW Forever (1.60.1), los mapas nuevos (mapa del mundo, Kalimdor, Durotar, Isla de Zephras, Hyjal y el resto de zonas redibujadas) solo se publicaron para el cliente en **inglés**. En cualquier otro idioma el cliente no los encuentra (`Logs/AsyncFile.log`: *"Can't find file in build manifest"*) y los pinta en **verde**, tanto el mapa de la zona como las zonas exploradas.
 
 ## Qué hace
 

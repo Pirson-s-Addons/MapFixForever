@@ -18,7 +18,7 @@
 
 ## The problem
 
-In the WoW Forever beta (1.60.1), the new world maps (the world map, Kalimdor, Durotar, Zephras Isle, Hyjal and the other redrawn zones) only shipped for **English** clients. In any other language the client can't find them (`Logs/AsyncFile.log`: *"Can't find file in build manifest"*) and draws them **solid green**, both the zone map and the explored areas.
+In WoW Forever (1.60.1), the new world maps (the world map, Kalimdor, Durotar, Zephras Isle, Hyjal and the other redrawn zones) only shipped for **English** clients. In any other language the client can't find them (`Logs/AsyncFile.log`: *"Can't find file in build manifest"*) and draws them **solid green**, both the zone map and the explored areas.
 
 ## What it does
 
