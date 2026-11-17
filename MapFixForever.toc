@@ -1,5 +1,5 @@
 ## Interface: 16001
-## Version: 1.02
+## Version: 1.03
 ## Author: Pirson
 ## IconTexture: Interface\AddOns\MapFixForever\img\logo_mff
 ## Title: |cffd597ffMap Fix Forever|r
