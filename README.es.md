@@ -1,26 +1,13 @@
-<h1 align="center">Map Fix Forever</h1>
+<p align="center"><a href="https://www.curseforge.com/wow/addons/map-fix-forever"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/readme-mf-es.svg" width="100%" alt="Map Fix Forever"/></a></p>
+
+<p align="center"><a href="README.md">English</a> · <b>Español</b></p>
 
 <p align="center">
-  <b>Se acabó el mapa del mundo verde en los clientes de World of Warcraft: Forever que no están en inglés</b>
+<a href="https://www.curseforge.com/wow/addons/map-fix-forever"><b>CurseForge</b></a> ·
+<a href="https://github.com/Pirson-s-Addons/MapFixForever/releases/latest"><b>Descargar</b></a>
 </p>
 
-<p align="center">
-<a href="https://github.com/Pirson-s-Addons/MapFixForever/releases/latest">
-<img src="https://img.shields.io/github/v/release/Pirson-s-Addons/MapFixForever?style=for-the-badge&color=A78BFA">
-</a>
-<img src="https://img.shields.io/badge/WoW_Forever-1.60.1-C4B5FD?style=for-the-badge">
-<a href="LICENSE">
-<img src="https://img.shields.io/badge/License-MIT-E9D5FF?style=for-the-badge">
-</a>
-</p>
-
-<p align="center">
-<a href="README.md">🇬🇧 English</a>
-</p>
-
----
-
-## 📸 Capturas
+## Capturas
 
 <table>
 <tr>
@@ -28,8 +15,6 @@
 <td align="center" width="50%"><img src="https://media.forgecdn.net/attachments/1957/883/mapfixed-png.png" alt="After: original map art"><br><sub>Después: mapa original</sub></td>
 </tr>
 </table>
-
----
 
 ## El problema
 
@@ -45,6 +30,12 @@ En la beta de WoW Forever (1.60.1), los mapas nuevos (mapa del mundo, Kalimdor, 
 
 **Minimapa gris en Orgrimmar y Ventormenta** (build 1.60.1.70291, todos los idiomas): dentro de esas dos ciudades el minimapa sale gris claro y negro. El addon oculta el minimapa roto de la ciudad y pinta debajo las teselas del suelo que ya tiene el juego, siguiendo tu posición, el zoom y el giro del minimapa. Los iconos quedan encima. Fuera de esas ciudades no cambia nada.
 
+## Comandos
+
+- `/mapfix` — estado: cuántas texturas originales se están mostrando.
+- `/mapfix on` / `/mapfix off` — activa o desactiva el arreglo.
+- `/mapfix minimap` — activa o desactiva el arreglo del minimapa gris.
+
 ## Instalación
 
 1. Descarga el zip de la [última release](https://github.com/Pirson-s-Addons/MapFixForever/releases/latest).
@@ -53,17 +44,13 @@ En la beta de WoW Forever (1.60.1), los mapas nuevos (mapa del mundo, Kalimdor, 
 
 Solo se carga en WoW Forever: sus `.toc` son `MapFixForever_Camelot.toc` (`Camelot` es el game type de Forever) y `MapFixForever.toc`, copia idéntica que necesita la app de CurseForge para detectarlo.
 
-## Comandos
-
-- `/mapfix` — estado: cuántas texturas originales se están mostrando.
-- `/mapfix on` / `/mapfix off` — activa o desactiva el arreglo.
-- `/mapfix minimap` — activa o desactiva el arreglo del minimapa gris.
-
 ## Notas
 
 - El addon pesa bastante (~52 MB en zip) porque lleva el arte del mapa.
 - Las texturas del mapa son de Blizzard Entertainment. Se incluyen solo para que los clientes no ingleses vean el mismo mapa que ya tiene el cliente en inglés. Si Blizzard publica los mapas en todos los idiomas, este addon deja de hacer falta.
 
----
-
 **Autor**: Pirson · [GitHub](https://github.com/Pirson-s-Addons) · [CurseForge](https://www.curseforge.com/members/pirson/projects) · Licencia MIT
+
+<br/>
+
+<p align="center"><a href="https://github.com/Pirson-s-Addons"><img src="https://raw.githubusercontent.com/Pirson-s-Addons/.github/main/profile/assets/readme-footer-es.svg" width="100%" alt="Parte de Pirson's Addons. Ver todos los addons."/></a></p>
