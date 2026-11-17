@@ -144,3 +144,9 @@ frame:SetScript("OnEvent", function(_, event)
         HookAll()
     end
 end)
+
+-- Menu de addons del minimapa (## AddonCompartmentFunc del .toc): lo mismo que el comando
+function MapFixForever_OnAddonCompartmentClick()
+    local open = SlashCmdList and SlashCmdList.MAPFIXFOREVER
+    if open then open("") end
+end
